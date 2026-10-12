@@ -23,14 +23,17 @@ through one of them. Anything outside what we can see, hear or otherwise sense, 
 ultrasound, is not perceived in the first place, so we cannot interact with it directly. A sensor can
 translate it into something we *can* perceive, but then the translation is the interface.
 
-```{admonition} Co-author note
-:class: tip
-The "five senses" list is a useful starting point, but HCI needs a richer one. We also sense
-**temperature, pain, body position and movement (proprioception), balance (vestibular sense)** and internal
-states. Proprioception is why you can type without looking at your hand, and the vestibular sense is why
-VR can make people feel sick. **TODO:** decide whether to keep "five" as the hook and then expand it in
-[The Human](the-human.md), or to introduce the fuller list here.
-```
+Strictly, the list is longer. We also sense **temperature, pain, body position and movement
+(proprioception)** and **balance (the vestibular sense)**. These matter, but for interaction with computers
+the first five are the most important, and above all **sight and hearing**: so far, these are the two
+channels through which computers communicate with us almost entirely. The extended list is picked up again
+in [The Human](the-human.md).
+
+The computer side is just as uneven. Computers have mature sensors for sight (cameras) and hearing
+(microphones). For touch there has been some development, driven by robotics (pressure and tactile sensors)
+and by vibration sensors, but it is still quite limited. For **smell and taste** there are no good
+computational sensors at all in comparison. This asymmetry is one reason interfaces are overwhelmingly
+visual and auditory.
 
 Humans are also not only receivers. We **act**: we speak, type, point, gesture, look, and (in the
 research settings of Part V) generate brain signals. HCI is concerned with both directions, *input* and
@@ -118,6 +121,47 @@ in their real context. Added complexity has costs in learning, errors, failure m
 devices) privacy and security.
 ```
 
+### Another example: a coffee machine
+
+We recently bought a coffee machine and we are happy with it. It has four functions: **espresso, coffee,
+hot water and steam**. For the first two you choose the strength of the coffee and the mug size, and then
+you press play. That is about the right amount of interface.
+
+Even a good design leaves room for improvement:
+
+- **Communicating what the machine is doing.** When it starts, it cleans its pipes. That is great, but
+  nothing tells the user. I know it by now; a first-time user, such as a guest, does not, and may wonder
+  whether the machine is broken.
+- **Redundant options.** You can choose "double espresso" and "espresso", but you can already choose the cup
+  size and the strength. The difference between the two is the quantity of coffee, which is what the mug
+  size already expresses.
+- **Automatic switch-off.** The machine turns itself off after a timer. This could be improved by showing
+  when it will switch off, perhaps with natural language: "switching off soon, any last coffee?", like the
+  last call for drinks in a British pub.
+
+Now the opposite temptation. Do you want to make your coffee machine more complicated? Connect it to the
+internet, so that it orders coffee beans by itself when the bin is nearly empty? Order a coffee from your
+phone while you are working upstairs, and be notified when it is ready? That saves perhaps one minute of
+your life. Is it worth the added complexity, the account, the failure modes and the privacy risk? This is
+the real question of HCI: not *what is possible*, but *what is the point*.
+
+### When "smart" systems frustrate
+
+Not all computer interaction is as benign as a coffee machine. My flight from Manchester to Frankfurt was
+cancelled the other day and I had to rebook through the airline's online chatbot. It simply went round in
+loops, with no way back. It was not smart at all.
+
+By *smart* I mean **flexible**: trying to find a solution to *my* problem. This system was a simple state
+machine with about five states that could not foresee any other path. Humans are not like that: we find a
+way. When I called an assistant, they helped me rebook one way or another. We do not want computer systems
+that leave us frustrated and stuck.
+
+```{admonition} Question for discussion
+:class: seealso
+Sketch the chatbot as a state machine: what states and transitions would you need so that the user is
+never trapped? What should it do when the user's problem is not in any of its states?
+```
+
 ## Putting it together
 
 A working definition for this book:
@@ -137,6 +181,9 @@ A working definition for this book:
    controls. What did you remove, and who loses out?
 4. **Beyond the senses.** Which interactions might use senses beyond the classic five? Name two products
    that do.
+5. **Improve a machine.** Pick an appliance at home (coffee machine, washing machine, microwave). List
+   what it fails to communicate to a first-time user, and which of its options are redundant.
+6. **Escape the loop.** Find an automated phone or chat system that trapped you. Which path was missing?
 
 ## Further reading
 
