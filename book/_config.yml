@@ -1,0 +1,43 @@
+# Book settings — docs: https://jupyterbook.org/en/stable/customize/config.html
+title: Human–Computer Interaction
+author: Arash Akbarinia
+copyright: "2026"
+logo: ""
+
+execute:
+  execute_notebooks: force   # run notebooks at build time so the book never ships stale output
+  timeout: 120
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  # Repo Pages URL. If you serve the book from arashakbarinia.github.io/projects/hci/
+  # instead, see README.md ("Publishing") and change this.
+  baseurl: https://arashakbarinia.github.io/hci-jupyterbook/
+
+repository:
+  url: https://github.com/arashakbarinia/hci-jupyterbook
+  path_to_book: book
+  branch: main
+
+sphinx:
+  config:
+    html_show_copyright: false
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+
+bibtex_bibfiles:
+  - references.bib

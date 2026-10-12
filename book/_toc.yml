@@ -1,0 +1,45 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Part I — Foundations
+    chapters:
+      - file: foundations/what-is-hci
+      - file: foundations/the-human
+      - file: foundations/the-computer
+  - caption: Part II — Ways of Interacting
+    chapters:
+      - file: modalities/overview
+      - file: modalities/text-and-pointing
+        sections:
+          - file: modalities/fitts-law-notebook
+      - file: modalities/voice-and-language
+      - file: modalities/gesture-gaze-haptics
+      - file: modalities/immersive-and-multimodal
+  - caption: Part III — Designing & Evaluating
+    chapters:
+      - file: design/principles
+      - file: design/user-research-and-prototyping
+      - file: design/evaluation
+      - file: design/accessibility
+  - caption: Part IV — Interacting with AI
+    chapters:
+      - file: ai/conversational-agents
+      - file: ai/human-ai-interaction
+      - file: ai/ethics-and-society
+  - caption: Part V — Brain–Machine & Brain–Computer Interfaces
+    chapters:
+      - file: brain/neuroscience-primer
+      - file: brain/bci-overview
+      - file: brain/non-invasive
+      - file: brain/invasive
+      - file: brain/neuroethics
+  - caption: Part VI — The Road Ahead
+    chapters:
+      - file: future/vision
+  - caption: Appendices
+    chapters:
+      - file: appendix/exercises
+      - file: appendix/resources
+      - file: appendix/writing-guide
+      - file: appendix/glossary
+      - file: appendix/bibliography
