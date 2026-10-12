@@ -3,6 +3,7 @@
 Curated external material. Add to it as we go and prefer open or free sources for students.
 
 ## Textbooks and classics
+- Hornbæk, Kristensson, Oulasvirta, *Introduction to Human-Computer Interaction* (Oxford University Press, 2025) — open access, https://doi.org/10.1093/oso/9780192864543.001.0001. The main reference for this book.
 - Norman, *The Design of Everyday Things* — the essential first read.
 - Dix, Finlay, Abowd, Beale, *Human–Computer Interaction* — comprehensive standard text (older; use for foundations).
 - Preece, Rogers, Sharp, *Interaction Design: Beyond Human–Computer Interaction*.

@@ -26,8 +26,11 @@ translate it into something we *can* perceive, but then the translation is the i
 Strictly, the list is longer. We also sense **temperature, pain, body position and movement
 (proprioception)** and **balance (the vestibular sense)**. These matter, but for interaction with computers
 the first five are the most important, and above all **sight and hearing**: so far, these are the two
-channels through which computers communicate with us almost entirely. The extended list is picked up again
-in [The Human](the-human.md).
+channels through which computers communicate with us almost entirely. Hornbæk, Kristensson and Oulasvirta
+make the same point: vision, hearing and touch are the modalities most commonly used in HCI, smell and
+taste have so far only been explored experimentally, and thermal sensing and pain have been investigated as
+alternatives {cite}`hornbaek2025introduction` (Chapter 3, pp. 37–41). The extended list is picked up
+again in [The Human](the-human.md).
 
 The computer side is just as uneven. Computers have mature sensors for sight (cameras) and hearing
 (microphones). For touch there has been some development, driven by robotics (pressure and tactile sensors)
@@ -42,7 +45,9 @@ research settings of Part V) generate brain signals. HCI is concerned with both 
 ## Computer
 
 A computer is an electrical machine, not a biological one. It runs on binary hardware: everything it senses,
-stores and does is ultimately encoded as bits.
+stores and does is ultimately encoded as bits. What makes it useful as a tool is that it is programmable,
+and the **user interface** is the part through which a person controls it: it hides what happens under
+the hood behind, say, a drag of an icon to the trash {cite}`hornbaek2025introduction` (Chapter 1).
 
 For most of computing history, computers did exactly what a human programmer specified, step by step: an
 algorithm is a clear set of instructions. That is no longer the whole picture. With modern AI, computers
@@ -118,7 +123,8 @@ they are *needed* for the task and the user.
 :class: important
 The right amount of interface is the *least* that lets the intended user do the intended task, reliably,
 in their real context. Added complexity has costs in learning, errors, failure modes, and (for connected
-devices) privacy and security.
+devices) privacy and security. Hornbæk et al. list the same idea among their common GUI guidelines: offer
+only the features that are needed {cite}`hornbaek2025introduction` (Chapter 28, p. 490).
 ```
 
 ### Another example: a coffee machine
@@ -152,7 +158,10 @@ cancelled the other day and I had to rebook through the airline's online chatbot
 loops, with no way back. It was not smart at all.
 
 By *smart* I mean **flexible**: trying to find a solution to *my* problem. This system was a simple state
-machine with about five states that could not foresee any other path. Humans are not like that: we find a
+machine with about five states that could not foresee any other path. (Finite-state machines are a
+standard way to model dialogues between user and system, and they make it possible to ask how many steps a
+user needs to recover from a mistake {cite}`hornbaek2025introduction`, Section 18.2, p. 314.) Humans are
+not like that: we find a
 way. When I called an assistant, they helped me rebook one way or another. We do not want computer systems
 that leave us frustrated and stuck.
 
@@ -187,5 +196,7 @@ A working definition for this book:
 
 ## Further reading
 
+- {cite}`hornbaek2025introduction`, the open-access textbook this chapter draws on: Chapter 1
+  (introduction), Chapter 3 (perception) and Chapter 18 (dialogue).
 - {cite}`norman2013design`, chapters 1–2: affordances, signifiers, and why everyday things confuse us.
 - See the [resource list](../appendix/resources.md).
